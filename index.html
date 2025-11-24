@@ -1,142 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-<link rel="stylesheet" href="./styles.css">
-
-    <title>鹭丰科技有限公司</title>
-    </head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="唐先生 | 15年制造业高管 | 金蝶云星空 & Odoo实施专家 | 多产出BOM、副产品、项目制造、官网商城库存实时同步">
+    <title>唐先生 | 金蝶云星空 & Odoo 复杂制造专家</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root{--main:#0052d9;--odoo:#6d1a6d;--gray:#555;}
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",Arial,sans-serif;background:#fff;color:#333;line-height:1.8;}
+        .container{max-width:1100px;margin:0 auto;padding:0 20px;}
+        header{background:linear-gradient(135deg,#0a1f3d,#0052d9);color:#fff;text-align:center;padding:90px 20px;position:relative;}
+        .hero{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:30px;max-width:1000px;margin:0 auto;}
+        .avatar img{width:160px;height:160px;border-radius:50%;border:6px solid rgba(255,255,255,0.3);box-shadow:0 10px 30px rgba(0,0,0,0.3);}
+        .title h1{font-size:2.9em;font-weight:800;margin:0;}
+        .title p{font-size:1.4em;margin:10px 0;opacity:0.95;}
+        .tags{margin:20px 0;}
+        .tags .tag{display:inline-block;background:rgba(255,255,255,0.2);padding:9px 22px;border-radius:50px;margin:8px;font-size:1em;}
+        .section{padding:90px 0;}
+        .section.gray{background:#f8fbff;}
+        h2{font-size:2.1em;margin-bottom:45px;color:#222;position:relative;padding-left:20px;}
+        h2::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);width:6px;height:40px;background:var(--main);border-radius:3px;}
+        .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:35px;}
+        .card{background:#fff;padding:40px;border-radius:18px;box-shadow:0 12px 35px rgba(0,0,0,0.09);transition:0.3s;}
+        .card:hover{transform:translateY(-12px);box-shadow:0 25px 50px rgba(0,0,0,0.16);}
+        .card h3{font-size:1.65em;margin-bottom:25px;}
+        .kingdee h3{color:#d32f2f;}
+        .odoo h3{color:#6d1a6d;}
+        .card li{position:relative;padding-left:30px;margin:16px 0;font-size:1.08em;}
+        .card li::before{content:"✓";position:absolute;left:0;font-weight:bold;font-size:1.3em;}
+        .kingdee li::before{color:#e91e63;}
+        .odoo li::before{color:#a44fb8;}
+        .killer{background:#fff8e1;border-left:8px solid #ff6f00;padding:40px;border-radius:0 18px 18px 0;margin:60px 0;box-shadow:0 10px 30px rgba(0,0,0,0.1);}
+        .contact{background:var(--main);color:#fff;text-align:center;padding:90px 20px;border-radius:18px;margin:70px 0;}
+        .wx{font-size:3.8em;font-weight:bold;margin:25px 0;color:#07c160;}
+        .btn{display:inline-block;background:#07c160;color:#fff;padding:18px 48px;border-radius:50px;font-size:1.3em;margin-top:25px;text-decoration:none;}
+        footer{background:#111;color:#aaa;padding:50px 20px;text-align:center;}
+        @media(max-width:768px){
+            .hero{flex-direction:column;text-align:center;}
+            .avatar img{width:130px;height:130px;}
+            .title h1{font-size:2.4em;}
+        }
+    </style>
+</head>
 <body>
-<div class="content">
-    <div class="top">
 
-        <div class="top1">
-            <div class="top1l">
-                <h1 style="color:white; font-size:20px">效率就是成本</h1>
-
+<header>
+    <div class="container">
+        <div class="hero">
+            <div class="avatar">
+                <!-- 把这里换成你自己的 GitHub 头像链接（直接用 github.com/你的用户名.png 即可） -->
+                <img src="https://github.com/thompsontangjin.png" alt="唐先生">
+                <!-- 示例（请立即替换）：https://github.com/tangxiaodu.png -->
             </div>
-            <div class="top1r">
-                <h1 style="color:white; font-size:20px">时间就是利润</h1>
-
-             </div>
-
+            <div class="title">
+                <h1>唐先生</h1>
+                <p>15年制造业高管亲历 × 金蝶云星空 & Odoo 实施专家</p>
+                <div class="tags">
+                    <span class="tag">多产出BOM+副产品</span>
+                    <span class="tag">项目制造+委外</span>
+                    <span class="tag">官网商城实时同步库存</span>
+                    <span class="tag">1-2个月落地</span>
+                </div>
+            </div>
         </div>
-        <div class="top2">
-            <h1 style="color:white; font-size:40px">鹭丰科技有限公司</h1>
-            <h1 style="color:white; font-size:20px">专注办公效率，office 高阶应用培训，供应链数据整合，办公自动化定制系统等</h1>
-        </div>
-    <div class="mcontent">
-        <div class="mcontentl">
-
-            <div class="mcontentlu" >
-                <p style="text-align:top;"><img src="image/h.jpeg" width="100%"/></p>
-
-                <h1 style="color:#00CED1;font-size:40px;text-align:left;">公司简介</h1>
-                <p style="color:#00CED1;font-size:20px;text-align:left;padding:10px;">在信息化浪潮中，人口红利的消失，对数据的及时性和准确性有了更高的需求。使大多数传统小企业无法与独角兽进行效率比拼。自身规模限制了在自动化办公方面的首次巨额投入。但是在经营过程中对数据的及时性和准确性的要求又是迈不过去的坎。本公司主要针对中小企业这方面需求提供全方位服务。针对企业发展的不同阶段，分别提供office中的三大件的高阶应用培训，供应链数据整合及办公自动化系统定制等。</p>
-            </div>
-
-
-
-            <div class="mcontentld">
-                <div class="mcontentld1" style="background-color:#48D1CC;">
-                    <div class="mcontentld1u">
-                        <div class="circle">
-                             <p style="color:#48D1CC;font-size:40px;"> 1</p>
-                        </div>
-                    </div>
-                        <h2>office 高阶应用培训</h2>
-                        <p>起步阶段，业务量小</p>
-                </div>
-
-
-                <div class="mcontentld1" style="background-color:#3CB371;">
-                    <div class="mcontentld1u">
-                        <div class="circle">
-                            <p style="color:#3CB371;font-size:40px;"> 2 </p>
-                        </div>
-                    </div>
-                            <h2>供应链数据整合</h2>
-                            <p>发展期，决策数据要求高和及时</p>
-                </div>
-                <div class="mcontentld1" style="background-color:#6B8E23;">
-                    <div class="mcontentld1u">
-                        <div class="circle">
-                            <p style="color:#6B8E23;font-size:40px;"> 3 </p>
-                        </div>
-                    </div>
-                        <h2>办公自动化定制</h2>
-                        <p>成熟期，模式稳定，对精细化管理要求高</p>
-                </div>
-            </div>
-
-        </div>
-        <div class="mcontentr">
-            <div class="mcontentld1u" style="  width:100%; height:100px;">
-                 <div class="circle" style=" width:100px; height:100px;background-image:url('image/1.jpeg');background-size: 200px;width: 100px;height: 100px;" >
-
-                </div>
-            </div>
-                <h2 style=" padding:10px;">office 高阶应用培训</h2>
-                <p style=" padding:10px;">Office 宏及函数使用及不同应用之间的数据共享。有效提高准确性及数据及时性并显著提高人员办公效率。</p>
-
-            <div class="mcontentld1u" style="  width:100%; height:100px;">
-                <div class="circle" style=" width:100px; height:100px;background-image:url('image/2.jpeg');background-size: 200px;width: 100px;height: 100px;" >
-
-                </div>
-            </div>
-                <h2 style=" padding:10px;">供应链数据整合</h2>
-                <p style=" padding:10px;">对供应链数据进行整合，提高报表数据对使用时要求的及时性。</p>
-
-
-            <div class="mcontentld1u" style="  width:100%; height:100px;">
-                <div class="circle" style=" width:100px; height:100px;background-image:url('image/3.jpeg'); background-size: 200px;width: 100px;height: 100px;" >
-
-                </div>
-
-            </div>
-                <h2 style=" padding:10px;">办公自动化定制系统</h2>
-                <p style=" padding:10px;">定制本公司特色自动化办公系统，摆脱人工及数据松散等问题，避免能用自动化办公系统跟本公司实际不兼容的缺点。</p>
-        </div>
-
     </div>
- <div class="mcontent" style="height:700px;">
-    <div style="width:400px;padding:10px;">
-<h1 style="color:#00CED1;font-size:40px;text-align:left;">公司定位</h1>
-        <h2 style="color:#00CED1;font-size:20px;text-align:left;">提高企业沟通，数据管理，及时性，准确性，成本控制最优化，高定制性。</h2>
-        <p style="text-align:left;">当前企业面对的困境主要有以下几个方面但不仅限于以下方面：<br>
-一。经济周期的影响，在经济运行过程中信贷的作用提高了经济运行的效率，但是因为经济环境中的个体信息局限性及自身发展的不确定性，到致经济周期的确定性不可避免。对企业自身的准确及时的掌控决定了企业发展过程中决策的有效性。<br>
-二。信息基础设施的发展及社会各环节对信息的需求有了更高的要求。企业的管理不再仅限于定性管理，更迫切需要在量化方面适应这个环境。<br>
-三。中国当前的人口环境到致的用工成本过高产能相对过剩迫使企业在管理系统软成本上必须降至同行更低水平才能获取更多市场竞争优势。</p>
-   <p style="text-align:top;"><img src="image/girl.jpg" width="100%"/></p>
-    </div>
+</header>
 
-      <div style="width:400px;padding:10px;">
-   <p style="text-align:top;"><img src="image/meeting.jpeg" width="100%"/></p>
-<h1 style="color:red;font-size:40px;text-align:left;">我们提供的服务</h1>
-          <p style="text-align:left;">针对运营特点，我们主要以下述方式提供服务：<br>
-一。包年服务：主要考虑企业发展过程中的不确定性需求动态及时提供具体的解决方案。对不同岗位人员的办公软件高阶运用及数据处理提供个性化解决方案。<br>
-二。培训服务：企业收集当前办公软件及数据要求后，集中对企业相关人员进行授课并协助落实解决方案。<br>
-三。软件定制服务：针对业务成熟上规模的企业提供定制性供应链管理为主的软件系统服务，特点是完全按本企业个性化需求定制，最大化避免能用软件带来的人员不适应及管理及操作方式去适应软件系统而不是系统提供人员效率的问题。</p>
+<!-- 以下内容保持不变（只展示部分，实际全部保留） -->
+<div class="section">
+    <div class="container">
+        <div style="background:linear-gradient(120deg,#e8f5e8,#c8e6c9);padding:45+px>;</div>
+        <!-- 省略中间内容，全部保留上一版 -->
     </div>
 </div>
-<div class="bottom">
-        <div style="background-image:url('image/logo.jpeg');background-size:100px;width:100px;">
+
+<!-- 为了节省篇幅，中间所有内容完全不变，直接粘贴上一版的全部代码即可 -->
+<!-- 这里直接给你补全完整版（只改了头像部分） -->
+
+<!-- === 完整中间内容开始（直接复制上一版所有代码到这里）=== -->
+<!--（为了不让你翻页，我直接把完整版贴完）-->
+
+<div class="section">
+    <div class="container">
+        <div style="background:linear-gradient(120deg,#e8f5e8,#c8e6c9);padding:45px;border-radius:18px;text-align:center;font-size:1.15em;">
+            <p><strong>1</strong> 我曾在制造业和贸易公司担任多年高管，后转金蝶&Odoo厂商方做资深实施顾问，既懂企业真实管理，也精通ERP生产与财务模块落地。</p>
+            <p><strong>2</strong> 我打通了“企业实际经验”与“ERP专业能力”之间的鸿沟，能站在老板和管理层视角，用最快路径推动数字化转型真正产生回报。</p>
+            <p><strong>3</strong> 从选型到上线、从生产排程到业财一体化，我都能提供闭环解决方案，<strong>1-2个月</strong>落地见效，速度和成功率远超普通顾问。</p>
+        </div>
     </div>
+</div>
 
-
-    <div style="width:700px;height:100px;">
-<h1 style="font-size:20px;text-align:left;">
-    联系方式： 唐先生
-</h1>
-     <h2 style="font-size:15px;text-align:left;">
-    手机号码：13779961531 &nbsp;微信号码：13779961531&nbsp;&nbsp;<br>skype: thompson7624&nbsp&nbsp&nbsp;EMAIL: 13779961531@139.com
-</h2>
+<div class="section gray">
+    <div class="container killer">
+        <h2>我最擅长解决的两种制造业终极难题</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>复杂多材料产出 + 多成品 + 副产品 + 联产品</h3>
+                <ul>
+                    <li>化工、食品、金属加工、废料回收等“一投多出”场景成本分摊精准到分</li>
+                    <li>主品、副产品、废料、残次品全部支持<strong>正向领料或倒冲</strong>灵活切换，自动入账</li>
+                    <li>金蝶星空联合生产 + Odoo 自定义副产品模块，1-2个月彻底根治</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>项目制造 & 委外全流程穿透管理</h3>
+                <ul>
+                    <li>单台机组/工程项目/模具项目从立项到结算全闭环</li>
+                    <li>委外加工费、运费、辅料费自动归集，项目毛利实时精准</li>
+                    <li>杜绝“干了一堆活到最后才发现亏本”</li>
+                </ul>
+            </div>
+        </div>
     </div>
+</div>
 
+<div class="section">
+    <div class="container">
+        <h2>我最擅长的两大系统</h2>
+        <div class="cards">
+            <div class="card kingdee">
+                <h3>金蝶云·星空（国产头部，适合大中型/合规型企业）</h3>
+                <ul>
+                    <li>完美支持多组织、多工厂、项目制造、集团合并报表</li>
+                    <li>上市公司、国企、高新区财政补贴审计零压力</li>
+                    <li>联合生产+副产品+费用分摊+项目WBS，天生为复杂制造而生</li>
+                    <li>最快1个月出准确单件成本、车间利润、项目毛利报表</li>
+                    <li>期末结账从7天缩短到1天</li>
+                </ul>
+            </div>
+            <div class="card odoo">
+                <h3>Odoo 自托管（全球最强开源ERP，适合成长型民企）</h3>
+                <ul>
+                    <li><strong>数据100%自托管在自己服务器，安全、可控、不被厂商锁</strong></li>
+                    <li><strong>公司官网 + 独立站商城 + ERP 库存实时零延迟贯通</strong></li>
+                    <li>前台下单 → 库存自动扣减 → 采购/生产自动触发 → 发货出库一气呵成</li>
+                    <li>成本仅传统ERP 1/5，所有功能全部开源可深度定制</li>
+                    <li>特别适合5000万-3亿营收、想打通前端电商的工厂</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
+
+<div class="contact">
+    <div class="container">
+        <h2>有以上任何需求？现在就加我</h2>
+        <p style="font-size:1.4em;margin:25px 0;">电话 / 微信同号<br>加微信请备注「星空」「Odoo」「副产品」「商城同步」+ 公司名</p>
+        <div class="wx">13779961531</div>
+        <a href="weixin://dl/add?username=13779961531" class="btn">点击添加微信沟通</a>
+        <p style="margin-top:35px;opacity:0.9;font-size:1em;">目前仅接制造业项目 · 谢绝纯培训与中间商</p>
+    </div>
 </div>
- </div>
+
+<footer>
+    © 2025 唐先生 · 金蝶云·星空 & Odoo 独立实施顾问<br>
+    专注复杂制造业数字化转型
+</footer>
+
 </body>
-
 </html>
