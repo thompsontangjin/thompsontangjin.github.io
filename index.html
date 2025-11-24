@@ -3,41 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="你还在为副产品分摊、项目毛利看不清、官网商城库存不同步发愁吗？1-2个月彻底解决">
+    <meta name="description" content="制造业最难的副产品、项目制造、商城库存同步难题，1-2个月彻底解决">
     <title>唐先生 | 专治制造业最难的ERP顽疾</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        :root{--red:#d32f2f;--main:#0052d9;--green:#07c160;}
+        :root{--red:#d32f2f;--main:#0052d9;--green:#07c160;--gray:#f8f9fa;}
         *{margin:0;padding:0;box-sizing:border-box;}
         body{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",Arial,sans-serif;background:#fff;color:#333;line-height:1.9;font-size:18px;}
-        .container{max-width:1100px;margin:0 auto;padding:0 20px;}
-        header{background:linear-gradient(135deg,#0a1f3d,#113366);color:#fff;text-align:center;padding:100px 20px 80px;}
-        h1{font-size:3em;font-weight:800;}
-        .lead{font-size:1.5em;margin:20px 0;opacity:0.95;}
-        .section{padding:90px 0;}
+        .container{max-width:1160px;margin:0 auto;padding:0 20px;}
+        header{background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.7)),url('https://images.unsplash.com/photo-1581092160607-f463a0e8efeb?w=1600&q=85') center/cover no-repeat;color:#fff;text-align:center;padding:140px 20px 100px;}
+        h1{font-size:3.2em;font-weight:900;letter-spacing:1px;}
+        .lead{font-size:1.6em;margin:20px 0;opacity:0.95;}
+        .section{padding:100px 0;}
         .section.gray{background:#f8fbff;}
-        .pain{background:#ffebee;padding:50px 40px;border-radius:20px;border-left:8px solid var(--red);margin:50px 0;box-shadow:0 10px 30px rgba(0,0,0,0.08);}
-        .pain h2{font-size:2.2em;margin-bottom:40px;color:var(--red);}
-        .pain li{font-size:1.25em;margin:25px 0;padding-left:10px;position:relative;}
-        .pain li::before{content:"✘";color:var(--red);font-weight:bold;position:absolute;left:-40px;font-size:1.5em;}
-        .want{background:#e8f5e8;padding:50px 40px;border-radius:20px;border-left:8px solid var(--green);margin:50px 0;box-shadow:0 10px 30px rgba(0,0,0,0.08);}
-        .want h2{font-size:2.2em;margin-bottom:40px;color:#2e7d32;}
-        .want li{font-size:1.25em;margin:25px 0;padding-left:10px;position:relative;}
-        .want li::before{content:"✓";color:var(--green);font-weight:bold;position:absolute;left:-40px;font-size:1.5em;}
-        .case{margin:40px 0;padding:40px;background:#fff;border-radius:18px;box-shadow:0 8px 30px rgba(0,0,0,0.1);}
-        .case h3{font-size:1.65em;margin-bottom:20px;color:var(--main);line-height:1.4;}
-        .me{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:50px;background:#fff;padding:80px 40px;border-radius:20px;margin:60px 0;box-shadow:0 15px 40px rgba(0,0,0,0.1);}
-        .me img{width:180px;height:180px;border-radius:50%;border:6px solid #eee;box-shadow:0 10px 30px rgba(0,0,0,0.2);}
-        .me ul{font-size:1.2em;line-height:2.2;}
-        .me li::before{content:"▹";color:var(--main);margin-right:10px;}
-        .contact{background:var(--main);color:#fff;text-align:center;padding:100px 20px;border-radius:20px;}
-        .wx{font-size:4em;font-weight:bold;color:#07c160;margin:30px 0;}
-        .btn{display:inline-block;background:#07c160;color:#fff;padding:20px 50px;border-radius:50px;font-size:1.4em;margin-top:30px;text-decoration:none;}
-        footer{background:#111;color:#aaa;padding:40px;text-align:center;font-size:0.95em;}
+        .block{position:relative;border-radius:24px;overflow:hidden;box-shadow:0 15px 40px rgba(0,0,0,0.12);margin:60px 0;}
+        .pain .content{background:linear-gradient(135deg,#ffebee,#ffcdd2);padding:60px 50px;color:#333;}
+        .pain h2{font-size:2.4em;color:#c62828;margin-bottom:40px;}
+        .pain li{font-size:1.32em;margin:28px 0;position:relative;padding-left:50px;}
+        .pain li::before{content:"✘";position:absolute;left:0;top:-8px;color:#e91e63;font-size:2em;font-weight:900;}
+        .want .content{background:linear-gradient(135deg,#e8f5e8,#c8e6c9);padding:60px 50px;}
+        .want h2{font-size:2.4em;color:#2e7d32;margin-bottom:40px;}
+        .want li{font-size:1.32em;margin:28px 0;position:relative;padding-left:50px;}
+        .want li::before{content:"✓";position:absolute;left:0;top:-8px;color:#43a047;font-size:2em;font-weight:900;}
+        .case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(480px,1fr));gap:40px;margin-top:60px;}
+        .case{position:relative;border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 12px 35px rgba(0,0,0,0.1);transition:0.3s;}
+        .case:hover{transform:translateY(-10px);}
+        .case img{width:100%;height:220px;object-fit:cover;}
+        .case .text{padding:35px 40px;}
+        .case h3{font-size:1.7em;color:var(--main);margin-bottom:18px;}
+        .me{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:100px 40px;border-radius:24px;display:flex;align-items:center;justify-content:center;gap:60px;flex-wrap:wrap;}
+        .me img{width:220px;height:220px;border-radius:50%;border:8px solid rgba(255,255,255,0.3);box-shadow:0 15px 40px rgba(0,0,0,0.4);}
+        .me h2{font-size:2.6em;margin-bottom:40px;}
+        .me ul{font-size:1.35em;line-height:2.3;}
+        .me li::before{content:"▹";margin-right:12px;color:#fff;}
+        .contact{background:var(--main);color:#fff;text-align:center;padding:120px 20px;border-radius:24px;}
+        .wx{font-size:4.5em;font-weight:900;color:#07c160;margin:30px 0;}
+        .btn{display:inline-block;background:#07c160;color:#fff;padding:22px 60px;border-radius:60px;font-size:1.5em;margin-top:30px;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,0.2);}
+        footer{background:#111;color:#aaa;padding:50px;text-align:center;}
         @media(max-width:768px){
-            h1{font-size:2.4em;}
-            .pain li,.want li{font-size:1.15em;}
-            .me{flex-direction:column;text-align:center;}
+            h1{font-size:2.5em;}
+            header{padding:100px 20px;}
+            .me{flex-direction:column;text-align:center;padding:80px 20px;}
+            .case-grid{grid-template-columns:1fr;}
         }
     </style>
 </head>
@@ -46,76 +53,97 @@
 <header>
     <div class="container">
         <h1>你是不是也正在被这些问题逼疯？</h1>
-        <p class="lead">副产品成本分不准？项目亏不亏到完工才知道？官网商城库存永远对不上？</p>
+        <p class="lead">副产品成本分不准 · 项目亏到完工才知道 · 官网商城库存永远对不上</p>
     </div>
 </header>
 
 <div class="section">
-    <div class="container pain">
-        <h2>你是不是经常遇到这些场景？</h2>
-        <ul>
-            <li>一投料出来五六个产品（一主两联三副），成本根本分不清谁赚谁赔</li>
-            <li>项目做到一半才发现已经亏了20%，但根本说不清钱丢在哪</li>
-            <li>委外加工费、运费、辅料费一堆发票，月底全靠财务手工摊</li>
-            <li>官网商城和独立站库存永远对不上，超卖、缺货、客户退款天天吵</li>
-            <li>期末结账要7-10天，老板还看不到真实利润</li>
-            <li>换了三拨顾问，系统三年还是靠Excel手工算</li>
-        </ul>
-    </div>
+    <div class="container">
+        <div class="block pain">
+            <div class="content">
+                <h2>你是不是经常被这些场景折磨？</h2>
+                <ul>
+                    <li>一投料出来五六个产品（一主两联三副），成本根本分不清谁赚谁赔</li>
+                    <li>项目做到一半才发现亏了20%，但说不清钱丢在哪</li>
+                    <li>委外加工费、运费、辅料一堆发票，月底全靠财务手工摊</li>
+                    <li>官网商城和独立站库存永远对不上，超卖、退款天天吵</li>
+                    <li>期末结账要7-10天，老板看不到真实利润</li>
+                    <li>换了三拨顾问，系统三年还是靠Excel</li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="container want">
-        <h2>你是不是特别想做到这些？</h2>
-        <ul>
-            <li>投一次料，系统自动把主品、联产品、副产品成本精准分摊，一键出报表</li>
-            <li>每个项目随时看到预算、实际花费、预计毛利，再也不亏着干</li>
-            <li>官网商城下单 → 库存立刻扣减 → 采购/生产自动触发 → 发货一条龙</li>
-            <li>老板手机一点就能看到全公司实时利润</li>
-            <li>1-2个月真正落地，成本立刻下降10-30%</li>
-        </ul>
+        <div class="block want">
+            <div class="content">
+                <h2>你是不是特别想做到这些？</h2>
+                <ul>
+                    <li>投一次料，系统自动精准分摊主品、联副产品成本</li>
+                    <li>每个项目实时看到预算、花费、预计毛利</li>
+                    <li>官网商城下单 → 库存立刻扣减 → 生产采购自动触发</li>
+                    <li>老板手机随时看全公司真实利润</li>
+                    <li>1-2个月真正落地，成本下降10-30%</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
 <div class="section gray">
     <div class="container">
+        <h2 style="text-align:center;font-size:2.5em;margin-bottom:60px;color:#222;">真实案例（已落地）</h2>
+        <div class="case-grid">
 
-        <div class="case">
-            <h3>案例1：安徽某化工企业（金蝶云·星空）</h3>
-            <p><strong>一主两联三副，六种产品同一条线产出</strong><br>
-            以前副产品全靠Excel估算，每月财务加班三天。上线42天后，系统自动分摊到0.01元/公斤，副产品第一次真正独立核算，年多变现340万，财务结账从8天缩短到1天。</p>
+            <div class="case">
+                <img src="https://images.unsplash.com/photo-1581092588539-5e8b22170d8d?w=800&q=85" alt="化工生产线">
+                <div class="text">
+                    <h3>安徽某化工企业（金蝶云·星空）</h3>
+                    <p><strong>一主两联三副，六产品同线产出</strong><br>
+                    以前全靠Excel估算。上线42天后系统自动分摊到0.01元/公斤，副产品独立核算年多赚340万，结账从8天→1天。</p>
+                </div>
+            </div>
+
+            <div class="case">
+                <img src="https://images.unsplash.com/photo-1581093458791-9d6c92f86c5e?w=800&q=85" alt="石材加工厂">
+                <div class="text">
+                    <h3>大连某石材加工厂（Odoo自托管）</h3>
+                    <p><strong>每单200+道委外工序</strong><br>
+                    55天打通项目+委外+官网商城实时库存，项目毛利精确到±1.5%，再无超卖，年节省退款+加急费120万+。</p>
+                </div>
+            </div>
+
         </div>
-
-        <div class="case">
-            <h3>案例2：大连某石材加工厂（Odoo自托管）</h3>
-            <p><strong>每张订单都要外发锯切、开槽、抛光，委外环节超200道</strong><br>
-            以前项目毛利全是“大概齐”。55天打通项目+委外+官网商城实时库存后，项目毛利精确到±1.5%，官网再无超卖，年节省退款+加急运输费120万+，老板现在手机随时看利润。</p>
-        </div>
-
     </div>
 </div>
 
 <div class="section">
-    <div class="container me">
-        <img src="https://github.com/thompsontangjin.png" alt="唐先生">
-        <div>
-            <h2 style="margin-bottom:30px;">能解决你这些问题的人：</h2>
-            <ul>
-                <li>15年制造业工厂实操高管出身，知道老板最怕什么</li>
-                <li>金蝶云·星空官方认证资深顾问，专攻最复杂的联合生产与项目制造</li>
-                <li>Odoo深度自托管玩家，已帮10+家工厂实现官网商城零延迟库存同步</li>
-                <li>只做1-2个月见效的项目，不卖课、不卖软件、只解决结果</li>
-            </ul>
-            <p style="margin-top:30px;font-size:1.3em;color:#d32f2f;">想知道你的企业最适合金蝶还是Odoo？<br>15分钟免费诊断，马上告诉你</p>
+    <div class="container">
+        <div class="me">
+            <img src="https://github.com/thompsontangjin.png" alt="唐先生">
+            <div>
+                <h2>能解决你这些问题的人</h2>
+                <ul>
+                    <li>15年制造业工厂实操高管出身，知道老板最怕什么</li>
+                    <li>金蝶云·星空官方认证资深顾问，专攻最复杂的联合生产与项目制造</li>
+                    <li>Odoo深度自托管玩家，已帮10+工厂实现官网商城零延迟库存同步</li>
+                    <li>只做1-2个月见效的项目，不卖课、不卖软件、只解决结果</li>
+                </ul>
+                <p style="margin-top:40px;font-size:1.5em;font-weight:bold;">
+                    想知道你的企业最适合金蝶还是Odoo？<br>
+                    <span style="color:#fff176;">15分钟免费诊断，马上告诉你</span>
+                </p>
+            </div>
         </div>
     </div>
 </div>
 
 <div class="contact">
     <div class="container">
-        <h2 style="font-size:2.5em;">现在就加我，15分钟帮你判断最优解</h2>
-        <p style="font-size:1.5em;margin:30px 0;">电话 / 微信同号<br>加微信请备注「副产品」「项目」「商城同步」+ 公司名</p>
-        <div66 class="wx">13779961531</div>
+        <h2 style="font-size:3em;margin-bottom:20px;">现在就加我</h2>
+        <p style="font-size:1.7em;margin:30px 0;">电话 / 微信同号：13779961531<br>
+        <span style="font-size:0.9em;">加微信请备注「副产品」「项目」「商城同步」+ 公司名</span></p>
+        <div class="wx">13779961531</div>
         <a href="weixin://dl/add?username=13779961531" class="btn">点击添加微信沟通</a>
-        <p style="margin-top:40px;opacity:0.9;">目前仅接制造业项目 · 谢绝培训机构与中间商</p>
+        <p style="margin-top:50px;opacity:0.9;">目前仅接制造业项目 · 谢绝培训与中间商</p>
     </div>
 </div>
 
